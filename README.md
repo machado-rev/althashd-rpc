@@ -9,12 +9,16 @@ Htmlcoin JSON RPC for TypeScript with Response Type Enforcement
 ## Example usage
 
 ```typescript
-import AlthashRpc from 'althashd-rpc';
+import AlthashRpc from './node_modules/althashd-rpc/dist/AlthashRpc';
 
 const rpc = new AlthashRpc('http://localhost:4889');
 
-const balance = await rpc.getBalance();
-console.log(balance);
+async function getRpcBalance() {
+    const balance = await rpc.getBalance();
+    console.log(balance);
+}
+
+getRpcBalance().catch((e) => console.error(e));
 ```
 
 
