@@ -1,0 +1,33 @@
+{
+  "name": "althashd-rpc",
+  "version": "0.1.1",
+  "description": "Htmlcoin JSON RPC with type validation",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "Leandro Machado <sr.machado@gmail.com>",
+  "repository": "github:machado-rev/althashd-rpc",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/debug": "4.1.5",
+    "@types/jest": "25.2.1",
+    "@types/lodash": "4.14.149",
+    "@types/node": "12.12.35",
+    "jest": "25.3.0",
+    "ts-jest": "25.4.0",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "axios": "0.19.2",
+    "debug": "4.1.1",
+    "delay": "4.3.0",
+    "fp-ts": "2.5.3",
+    "io-ts": "2.2.0",
+    "lodash": "4.17.15"
+  }
+}
